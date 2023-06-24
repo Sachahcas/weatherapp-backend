@@ -22,6 +22,7 @@ router.post('/', (req, res) => {
 						tempMin: apiData.main.temp_min,
 						tempMax: apiData.main.temp_max,
 					});
+					console.log(apiData)
 
 					// Finally save in database
 					newCity.save().then(newDoc => {
